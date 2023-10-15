@@ -1,0 +1,132 @@
+// Define variables for reusability
+@import url('https://fonts.googleapis.com/css2? family= Inter:wght@100;400;900 & display=swap');
+$primary-color-header: #000;
+$secondary-color: #e74c3c;
+$colorWhith: #fff;
+$font-family: 'inter', Arial, sans-serif;
+$bgCards: #ccc;
+
+// Apply styles to elements
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.header {
+  background-color: $primary-color-header;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+
+  .logo {
+    .logo__image {
+      width: 200px;
+      height: auto;
+    }
+  }
+
+  .nav {
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    padding: 0;
+    gap: 50px;
+
+    .nav__menu {
+      margin-right: 20px;
+      cursor: pointer;
+      transition: color 0.3s;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.main {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  .section__title {
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    line-height: 29px;
+  }
+  .text{
+    font-size: 16px;
+    text-align: justify;
+  }
+  .intro {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    .softskill{
+      font-weight: bold;
+    }
+  }
+  .cards {
+    list-style: none;
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    .cards__iten {
+      background: $bgCards;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+      text-align: center;
+
+      .cards__image {
+        max-width: 100px;
+        height: auto;
+        margin: 10px auto 10px;
+      }
+
+      .cards__title {
+        font-size: 1.5rem;
+        margin: 10px 0;
+        width: 100%;
+        font-size: 20px;
+      }
+
+      .cards__text {
+        font-size: 1rem;
+        color: #333;
+      }
+    }
+    .cards__iten:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.footer {
+  background-color: #000;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+
+
+  .copyrigth {
+    text-align: center;
+    color: $colorWhith;
+    margin: auto;
+  }
+}
