@@ -6,6 +6,8 @@ $colorWhith: #fff;
 $font-family: 'inter', Arial, sans-serif;
 $bgCards: #ccc;
 
+@import "form";
+
 // Apply styles to elements
 body {
   font-family: $font-family;
@@ -14,40 +16,46 @@ body {
   background-color: #f2f2f2;
 }
 
+
 .header {
   background-color: $primary-color-header;
   color: white;
   padding: 20px;
   display: flex;
   justify-content: space-around;
+}
+.logo {
+  .logo__image {
+    width: 200px;
+    height: auto;
+  }
+}
 
-  .logo {
-    .logo__image {
-      width: 200px;
-      height: auto;
-    }
+.nav {
+  list-style: none;
+  display: flex;
+  margin: 10px;
+  padding: 0;
+  gap: 50px;
+}
+.nav__menu {
+  margin-right: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  .link {
+    text-decoration: none;
+    color: $colorWhith;
+  }
+  .link:last-child {
+    margin-right: 0;
   }
 
-  .nav {
-    list-style: none;
-    display: flex;
-    margin: 10px;
-    padding: 0;
-    gap: 50px;
-
-    .nav__menu {
-      margin-right: 20px;
-      cursor: pointer;
-      transition: color 0.3s;
-
-      &:last-child {
-        margin-right: 0;
-      }
-
-      &:hover {
-        color: $secondary-color;
-      }
-    }
+  .link:hover {
+    color: $secondary-color;
+  }
+  .link:after {
+    color: $colorWhith;
   }
 }
 
@@ -65,7 +73,7 @@ body {
     text-align: center;
     line-height: 29px;
   }
-  .text{
+  .text {
     font-size: 16px;
     text-align: justify;
   }
@@ -75,7 +83,7 @@ body {
     flex-direction: column;
     margin: 0 auto;
 
-    .softskill{
+    .softskill {
       font-weight: bold;
     }
   }
@@ -83,7 +91,7 @@ body {
     list-style: none;
     padding: 30px 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
 
     .cards__iten {
@@ -123,10 +131,91 @@ body {
   display: flex;
   justify-content: center;
 
-
   .copyrigth {
     text-align: center;
     color: $colorWhith;
     margin: auto;
   }
 }
+.intro__image {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+@media (min-width: 1200px) {
+  .main {
+    max-width: 1100px;
+  }
+}
+@media (max-width: 568px) {
+  .header {
+    overflow: hidden;
+  }
+  .main {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    overflow: hidden;
+    .cards {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      .cards__iten {
+        padding: 10px;
+      }
+    }
+  }
+
+
+}
+// ... (seu código SCSS anterior)
+
+@media screen and (max-width: 568px) {
+  .header {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+
+    .logo {
+      .logo__image {
+        width: 150px;
+        margin: 0 auto;
+      }
+    }
+
+    .nav {
+      margin: 0 auto;
+      .nav__menu {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .logo {
+      .logo__image {
+        width: 200px;
+      }
+    }
+
+    .nav {
+      flex-direction: row;
+
+      .nav__menu {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// ... (seu código SCSS anterior)
