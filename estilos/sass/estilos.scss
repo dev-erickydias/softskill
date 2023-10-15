@@ -6,7 +6,7 @@ $colorWhith: #fff;
 $font-family: 'inter', Arial, sans-serif;
 $bgCards: #ccc;
 
-@import "form";
+@import 'form';
 
 // Apply styles to elements
 body {
@@ -15,7 +15,6 @@ body {
   padding: 0;
   background-color: #f2f2f2;
 }
-
 
 .header {
   background-color: $primary-color-header;
@@ -58,7 +57,9 @@ body {
     color: $colorWhith;
   }
 }
-
+.softskill {
+  font-weight: bold;
+}
 .main {
   max-width: 900px;
   margin: 20px auto;
@@ -82,10 +83,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-
-    .softskill {
-      font-weight: bold;
-    }
   }
   .cards {
     list-style: none;
@@ -143,8 +140,50 @@ body {
   object-fit: cover;
   border-radius: 5px;
 }
+.soft {
+  list-style: none;
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: 1fr;
 
+  .cards__iten {
+    background: $bgCards;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+  .cards__image {
+    max-width: 100px;
+    height: auto;
+    margin: 10px auto 10px;
+  }
 
+  .cards__title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .cards__text {
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .cards__iten:hover {
+    transform: scale(1.1);
+  }
+}
+.links__social{
+  display: flex;
+  flex-direction: column;
+  
+  .Social{
+    margin: 0 auto;
+  }
+}
 @media (min-width: 1200px) {
   .main {
     max-width: 1100px;
@@ -168,8 +207,6 @@ body {
       }
     }
   }
-
-
 }
 // ... (seu código SCSS anterior)
 
