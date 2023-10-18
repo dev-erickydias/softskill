@@ -5,6 +5,7 @@
 <h2>Veja um spoiler de como a pagina ficou</h2>
 <img src="./image/readme/Captura de ecrã 2023-10-16 001044.png">
 <p>Você pode visualizar como o projeto ficou clicando <a href="https://softskill-seven.vercel.app/">Aqui</a></p>
+<p>Você pode visualizar o figma do projeto clicando <a href="https://www.figma.com/file/GQS8xRJEkczqdPnhSCbooE/Untitled?type=design&node-id=0%3A1&mode=design&t=uJjIj3rSrZ4wcPh9-1">Aqui</a></p>
 
 # links de contactos
 
