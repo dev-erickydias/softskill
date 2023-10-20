@@ -1,6 +1,6 @@
 <div align="center">
 <h1>Projeto de SoftSkill</h1>
-<p>Neste projeto viso responder a pergunta da Mentora <a href="https://www.linkedin.com/in/luizancgarcia/">Luiza Souza</a>, Da aula de carreira da <a href="https://www.linkedin.com/company/tripleten-brasil/">TripeTen</a>, Foi nos perguntado <em>QUAL A SOFT SKILL MAIS IMPORTNATE E POR QUE?</em> Então visei responder isso de uma forma bem dinamica com uma Landing Page.</p>
+<p>Neste projeto viso responder a pergunta da Mentora <a href="https://www.linkedin.com/in/luizancgarcia/">Luiza Costa</a>, Da aula de carreira da <a href="https://www.linkedin.com/company/tripleten-brasil/">TripeTen</a>, Foi nos perguntado <em>QUAL A SOFT SKILL MAIS IMPORTNATE E POR QUE?</em> Então visei responder isso de uma forma bem dinamica com uma Landing Page.</p>
 <p align="justify"></p>
 <h2>Veja um spoiler de como a pagina ficou</h2>
 <img src="./image/readme/Captura de ecrã 2023-10-16 001044.png">
